@@ -16,6 +16,7 @@ class Spacecraft {
     spaceCraft: string = "Space Shuttle";
     speedMph: number = 17500;
     milesPerKilometer: number = 0.621;
+    name: string;
     constructor(name: string, speedMph: number) {
         this.name = name;
         this.speedMph = speedMph;
@@ -46,8 +47,8 @@ let spaceShuttle = new Spacecraft('Determination', 17500);
 
 // ${spaceShuttle.getDaysToLocation(kilometersToMars)} and ${spaceShuttle.name}.
 // Determination would take 332.67857142857144 days to get to Mars.
-console.log(`${spaceShuttle.name} would take ${spaceShuttle.getDaysToLocation(kilometersToMars)}`);
+console.log(`${spaceShuttle.name} would take ${spaceShuttle.getDaysToLocation(kilometersToMars)} days to get to Mars.`);
    
 // ${spaceShuttle.getDaysToLocation(kilometersToTheMoon)} and ${spaceShuttle.name}.
 // Determination would take 0.5683628571428571 days to get to the Moon.
-console.log(`${spaceShuttle.name} would take ${spaceShuttle.getDaysToLocation(kilometersToTheMoon)}`);
+console.log(`${spaceShuttle.name} would take ${spaceShuttle.getDaysToLocation(kilometersToTheMoon)} days to get to the Moon.`);
