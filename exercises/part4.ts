@@ -28,27 +28,10 @@ class Spacecraft {
     }
 }
 
-// class Astronaut {
-//     name: string;
-//     constructor(firstName: string, lastName: string) {
-//        this.name = firstName + " " + lastName;
-//     }
-//     greet() {
-//        return "Hello, " + this.name;
-//     }
-//  }
-// 
-//  let Bob = new Astronaut("Bob","Smith");
-
 // Create an instance of the class here:
 let spaceShuttle = new Spacecraft('Determination', 17500);
 
 // Print two outputs - one for the trip to Mars and one for the trip to the moon.
 
-// ${spaceShuttle.getDaysToLocation(kilometersToMars)} and ${spaceShuttle.name}.
-// Determination would take 332.67857142857144 days to get to Mars.
 console.log(`${spaceShuttle.name} would take ${spaceShuttle.getDaysToLocation(kilometersToMars)} days to get to Mars.`);
-   
-// ${spaceShuttle.getDaysToLocation(kilometersToTheMoon)} and ${spaceShuttle.name}.
-// Determination would take 0.5683628571428571 days to get to the Moon.
 console.log(`${spaceShuttle.name} would take ${spaceShuttle.getDaysToLocation(kilometersToTheMoon)} days to get to the Moon.`);
